@@ -1,0 +1,7 @@
+.side {
+    display: flex;
+    flex-basis: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(69, 150, 255);
+}
