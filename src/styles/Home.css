@@ -1,0 +1,25 @@
+.main {
+    max-width: 100vw;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.home {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center align items horizontally */
+    justify-content: space-between; /* Space out items evenly vertically */
+    height: 100vh; /* Make sure the container takes the full viewport height */
+
+    background-color: #6f9fff;
+    color: rgb(255, 255, 255);
+}
+.topBar {
+    display: flex;
+    height: 60px;
+    justify-content: right;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(41, 122, 227);
+}
