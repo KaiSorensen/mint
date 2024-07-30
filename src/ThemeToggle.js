@@ -1,27 +1,32 @@
 import React from 'react';
 import { useTheme } from 'next-themes';
-import { Switch } from '@nextui-org/react';
-
+import { Button } from '@nextui-org/react';
 import SunIcon from './icons/SunIconWhiteFill.png';
 import MoonIcon from './icons/MoonIconFill.png';
+import './styles/ThemeToggle.css';
 
-export function ThemeToggle() {
-  const { theme, setTheme } = useTheme();
+export default function ThemeToggle() {
+    const { theme, setTheme } = useTheme();
 
-  return (
-    <Switch
-      checked={theme === 'dark'}
-      onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
-      size="lg"
-      color="secondary"
-      startContent={
-        theme === 'dark' ? null : 
-        <img src={MoonIcon} alt="Sun" style={{width: '30px', height: '30px'}} />
-      }
-      endContent={
-        theme === 'dark' ? 
-        <img src={SunIcon} alt="Moon" style={{width: '30px', height: '30px'}} /> : null
-      }
-    />
-  );
+    const toggleTheme = () => {
+        setTheme(theme === 'dark' ? 'light' : 'dark');
+    };
+
+    return (
+        <Button
+            isIconOnly
+            onClick={toggleTheme}
+            aria-label="Toggle theme"
+            size="sm"
+            variant="light"
+            className="theme-toggle"
+            disableRipple
+        >
+            <img 
+                src={theme === 'dark' ? SunIcon : MoonIcon} 
+                alt={theme === 'dark' ? "Sun" : "Moon"} 
+                className="theme-icon"
+            />
+        </Button>
+    );
 }

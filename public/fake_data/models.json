@@ -1,0 +1,40 @@
+{
+    "models": [
+        {
+            "name": "Mnist",
+            "modelType": "Classification",
+            "accuracy": "93%",
+            "dataSet": "MNIST Dataset",
+            "dataType": "CSV",
+            "dateCreated": "2022-01-15",
+            "dateAccessed": "2023-04-01"
+        },
+        {
+            "name": "Cifar10",
+            "modelType": "Classification",
+            "accuracy": "85%",
+            "dataSet": "CIFAR-10 Dataset",
+            "dataType": "Image",
+            "dateCreated": "2022-02-20",
+            "dateAccessed": "2023-03-28"
+        },
+        {
+            "name": "Iris",
+            "modelType": "Classification",
+            "accuracy": "95%",
+            "dataSet": "Iris Flower Dataset",
+            "dataType": "CSV",
+            "dateCreated": "2022-03-05",
+            "dateAccessed": "2023-03-25"
+        },
+        {
+            "name": "SentimentAnalysis",
+            "modelType": "Natural Language Processing",
+            "accuracy": "89%",
+            "dataSet": "Social Media Posts",
+            "dataType": "Text",
+            "dateCreated": "2022-04-10",
+            "dateAccessed": "2023-03-22"
+        }
+    ]
+}

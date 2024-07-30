@@ -1,0 +1,25 @@
+:root {
+    /* Red theme */
+    --background-red-light: #ffcccb;
+    --background-red-dark: #8b0000;
+    --text-red-light: #660000;
+    --text-red-dark: #ffcccc;
+    --fill-red-light: #ffd9d9;  /* Lighter than background for contrast */
+    --fill-red-dark: #a50000;   /* Lighter than background for contrast */
+  
+    /* Blue theme */
+    --background-blue-light: #e6f2ff;
+    --background-blue-dark: #000080;
+    --text-blue-light: #000066;
+    --text-blue-dark: #ccccff;
+    --fill-blue-light: #cce6ff;  /* Darker than background for contrast */
+    --fill-blue-dark: #0000a6;   /* Lighter than background for contrast */
+  
+    /* Gray theme */
+    --background-gray-light: #f0f0f0;
+    --background-gray-dark: #333333;
+    --text-gray-light: #333333;
+    --text-gray-dark: #f0f0f0;
+    --fill-gray-light: #e0e0e0;  /* Darker than background for contrast */
+    --fill-gray-dark: #4a4a4a;   /* Lighter than background for contrast */
+  }

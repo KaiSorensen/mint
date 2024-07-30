@@ -1,6 +1,5 @@
 import './styles/AccountButton.css';
-import AccountMenu from './AccountMenu';
-import { popover, PopoverContent } from '@nextui-org/react';
+import { PopoverContent } from '@nextui-org/react';
 
 export default function AccountButton() {
     return (
